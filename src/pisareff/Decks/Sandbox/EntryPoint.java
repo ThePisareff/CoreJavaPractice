@@ -1,6 +1,9 @@
 package pisareff.Decks.Sandbox;
 
+import java.io.PrintStream;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class EntryPoint {
@@ -9,6 +12,8 @@ public class EntryPoint {
         System.out.println("=======Deck=======" + "\n" + Deck);
         Card.shuffleDeck(Deck);
         System.out.println("\n"+ "\n"+ "\n"+ "=======Deck======="+ "\n"+ Deck);
+
+        Set<Integer> set = new HashSet<Integer>();
 
         int DrawCount = 5;
 
@@ -39,4 +44,3 @@ public class EntryPoint {
         return Hand;
     }
 }
-
